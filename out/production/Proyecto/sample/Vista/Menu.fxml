@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #187AD5;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="sample.Vista.menuController">
+   <children>
+      <JFXButton fx:id="botonCategorias" layoutX="49.0" layoutY="146.0" onMouseClicked="#categorias_on_mouse_clicked" prefHeight="38.0" prefWidth="115.0" style="-fx-border-color: #fff; -fx-border-width: 2px;" text="Categorias" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="botonFlujo" layoutX="226.0" layoutY="146.0" onMouseClicked="#flujoEfectivo_on_mouse_clicked" prefHeight="38.0" style="-fx-border-color: #ffff; -fx-border-width: 2px;" text="Flujo de efectivo" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="botonIndicador" layoutX="408.0" layoutY="146.0" onMouseClicked="#indicadorDinero_on_mouse_clicked" prefHeight="38.0" style="-fx-border-color: #ffff; -fx-border-width: 2px;" text="Indicador finaciero" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="50.0" fitWidth="60.0" layoutX="18.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Recursos/icons8_1.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="77.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Finanzas ">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

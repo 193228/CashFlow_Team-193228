@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="698.0" prefWidth="635.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Vista.registroController">
+   <children>
+      <Pane prefHeight="698.0" prefWidth="130.0" style="-fx-background-color: #187AD5;">
+         <children>
+            <ImageView fitHeight="59.0" fitWidth="59.0" layoutX="36.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/icons8_entradamoney.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="59.0" fitWidth="59.0" layoutX="36.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/pay.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="59.0" fitWidth="59.0" layoutX="36.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/bank.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="regresarBoton" layoutX="15.0" layoutY="636.0" onMouseClicked="#regresarClicked" prefHeight="38.0" prefWidth="90.0" style="-fx-border-color: #fff; -fx-border-width: 2px;" text="Regresar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Text fill="#187ad5" layoutX="152.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cuentas por cobrar" wrappingWidth="157.93280029296875">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Separator layoutX="152.0" layoutY="46.0" prefHeight="2.0" prefWidth="449.0" />
+      <JFXTextField fx:id="nsemanaCobrarTexfield" layoutX="152.0" layoutY="74.0" prefHeight="26.0" prefWidth="73.0" promptText="No. Semana" />
+      <JFXTextField fx:id="rsocialCobrarTexfield" layoutX="152.0" layoutY="163.0" prefHeight="26.0" prefWidth="300.0" promptText="Razon social" />
+      <JFXTextField fx:id="montoCobrarTexfield" layoutX="152.0" layoutY="115.0" prefHeight="26.0" prefWidth="182.0" promptText="Monto $" />
+      <JFXButton fx:id="cobrarBoton" layoutX="495.0" layoutY="205.0" onMouseClicked="#cobrarBoton" prefHeight="38.0" prefWidth="106.0" style="-fx-background-color: #187AD5;" text="Guardar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Text fill="#187ad5" layoutX="145.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cuentas por pagar" wrappingWidth="157.93280029296875">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Separator layoutX="145.0" layoutY="278.0" prefHeight="2.0" prefWidth="449.0" />
+      <JFXTextField fx:id="nsemanaPagarTexfield" layoutX="145.0" layoutY="306.0" prefHeight="26.0" prefWidth="73.0" promptText="No. Semana" />
+      <JFXTextField fx:id="rsocialPagarTexfield" layoutX="145.0" layoutY="395.0" prefHeight="26.0" prefWidth="300.0" promptText="Razon social" />
+      <JFXTextField fx:id="montoPagarTexfield" layoutX="145.0" layoutY="347.0" prefHeight="26.0" prefWidth="182.0" promptText="Monto $" />
+      <JFXButton fx:id="pagarBoton" layoutX="488.0" layoutY="437.0" onMouseClicked="#pagarBoton" prefHeight="38.0" prefWidth="106.0" style="-fx-background-color: #187AD5;" text="Guardar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Text fill="#187ad5" layoutX="145.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bancos" wrappingWidth="157.93280029296875">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Separator layoutX="145.0" layoutY="486.0" prefHeight="2.0" prefWidth="449.0" />
+      <JFXTextField fx:id="nsemanaBancoTexfield" layoutX="145.0" layoutY="514.0" prefHeight="26.0" prefWidth="73.0" promptText="No. Semana" />
+      <JFXTextField fx:id="descripcionBancoTexfiled" layoutX="145.0" layoutY="603.0" prefHeight="26.0" prefWidth="300.0" promptText="Descripcion " />
+      <JFXTextField fx:id="montoBancoTexfield" layoutX="145.0" layoutY="555.0" prefHeight="26.0" prefWidth="182.0" promptText="Monto $" />
+      <JFXButton fx:id="bancosBoton" layoutX="488.0" layoutY="645.0" onMouseClicked="#bancosBoton" prefHeight="38.0" prefWidth="106.0" style="-fx-background-color: #187AD5;" text="Guardar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

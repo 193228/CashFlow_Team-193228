@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="805.0" style="-fx-background-color: #187AD5;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Vista.categoriaController">
+   <children>
+      <TableView fx:id="tableView" layoutX="21.0" layoutY="114.0" prefHeight="230.0" prefWidth="338.0">
+        <columns>
+          <TableColumn fx:id="clasificacionColumn" prefWidth="111.99996566772461" style="-fx-background-color: #187AD5; -fx-border-color: #ffff; -fx-border-width: 1.5px;" text="Calsificacion" />
+          <TableColumn fx:id="categoriaColumn" prefWidth="112.0" style="-fx-background-color: #187AD5; -fx-border-color: #fff; -fx-border-width: 1.5px;" text="Categoria" />
+            <TableColumn fx:id="subcatColumn" prefWidth="113.5999816894531" style="-fx-background-color: #187AD5; -fx-border-color: #ffff; -fx-border-width: 1.5px;" text="Sub-Categoria" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="categoriaTextfield" layoutX="579.0" layoutY="173.0" prefHeight="26.0" prefWidth="154.0" unFocusColor="WHITE" />
+      <JFXTextField fx:id="subTextfield" layoutX="579.0" layoutY="228.0" prefWidth="154.0" unFocusColor="WHITE" />
+      <JFXButton fx:id="botonCategorias" layoutX="569.0" layoutY="297.0" onMouseClicked="#botonClicked" prefHeight="38.0" prefWidth="173.0" style="-fx-border-color: #fff; -fx-border-width: 2px;" text="Guardar/Editar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Text fill="#f8f8f8" layoutX="462.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clasificacion:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#f8f8f8" layoutX="462.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sub-Categoria:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#f8f8f8" layoutX="462.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categoria:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#fafafa" layoutX="21.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lista de categorias">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="calsificacionCombo" layoutX="578.0" layoutY="113.0" prefWidth="154.0" promptText="Opciones" style="-fx-background-color: #fff;" />
+      <JFXButton fx:id="regresarBoton" layoutX="642.0" layoutY="37.0" onMouseClicked="#regresarClicked" prefHeight="38.0" prefWidth="90.0" style="-fx-border-color: #fff; -fx-border-width: 2px;" text="Regresar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

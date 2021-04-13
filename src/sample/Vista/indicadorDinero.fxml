@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="332.0" prefWidth="538.0" style="-fx-background-color: #187AD5;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Vista.indicadorController">
+   <children>
+      <JFXButton fx:id="botonRegistro" layoutX="53.0" layoutY="147.0" onMouseClicked="#registroClicked" prefHeight="38.0" style="-fx-border-color: #ffff; -fx-border-width: 2px;" text="Registro de Informacion" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="botonReporte" layoutX="301.0" layoutY="147.0" onMouseClicked="#reporteClicked" prefHeight="38.0" prefWidth="184.0" style="-fx-border-color: #ffff; -fx-border-width: 2px;" text="Reportes" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="regresarBoton" layoutX="394.0" layoutY="248.0" onMouseClicked="#regresarClicked" prefHeight="38.0" prefWidth="90.0" style="-fx-border-color: #fff; -fx-border-width: 2px;" text="Regresar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
