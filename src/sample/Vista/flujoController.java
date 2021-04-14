@@ -66,9 +66,7 @@ public class flujoController {
 
     @FXML
     void regresarClicked(MouseEvent event) {
-        Stage stage = (Stage) Main.secondStage.getScene().getWindow();
-        stage.close();
-        Main.newStage("Menu","Finanzas");
+        Main.setFXML("Menu","Finanzas");
     }
 
 }

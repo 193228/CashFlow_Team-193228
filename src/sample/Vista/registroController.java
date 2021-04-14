@@ -137,9 +137,7 @@ public class registroController implements Initializable {
     }
     @FXML
     void regresarClicked(MouseEvent event) {
-        Stage stage = (Stage) Main.secondStage.getScene().getWindow();
-        stage.close();
-        Main.newStage("registroInfo","Menu");
+        Main.setFXML("Menu","Finanzas");
     }
     @Override
     public void initialize(URL location, ResourceBundle resources) {
