@@ -5,6 +5,8 @@ import com.jfoenix.controls.JFXTextField;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
+import sample.Main;
 import sample.Modelo.flujoEfectivo;
 
 import javax.swing.*;
@@ -64,7 +66,9 @@ public class flujoController {
 
     @FXML
     void regresarClicked(MouseEvent event) {
-
+        Stage stage = (Stage) Main.secondStage.getScene().getWindow();
+        stage.close();
+        Main.newStage("Menu","Finanzas");
     }
 
 }

@@ -34,14 +34,14 @@ public class menuController implements Initializable {
 
     @FXML
     void flujoEfectivo_on_mouse_clicked(MouseEvent event) {
-        Main.newStage("flujoEfectivo","Flujo");
+        Main.newStage("flujoEfectivo","Flujo de Efectivo");
         Stage stage = (Stage) Main.primaryStages.getScene().getWindow();
         stage.close();
     }
 
     @FXML
     void indicadorDinero_on_mouse_clicked(MouseEvent event) {
-        Main.newStage("registroInfo","Indicadores");
+        Main.newStage("indicadorDinero","Indicadores de dinero");
         Stage stage = (Stage) Main.primaryStages.getScene().getWindow();
         stage.close();
     }

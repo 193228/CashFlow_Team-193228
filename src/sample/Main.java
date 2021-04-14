@@ -21,7 +21,7 @@ public class Main extends Application {
         adaptador.getConnection();
         primaryStages = new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("Vista/Menu.fxml"));
-        primaryStages.setTitle("Hello World");
+        primaryStages.setTitle("Finanzas");
         primaryStages.setScene(new Scene(root));
         primaryStages.show();
     }
