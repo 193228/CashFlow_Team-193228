@@ -11,19 +11,34 @@ import java.io.IOException;
 
 public class Main extends Application {
 
-    public static Scene scene;
-    public static Stage primaryStages;
+    private static Scene scene;
+    private static Stage primaryStage;
     public static Stage secondStage;
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        adaptadorSql adaptador = new adaptadorSql();
-        adaptador.getConnection();
-        primaryStages = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("Vista/Menu.fxml"));
-        primaryStages.setTitle("Finanzas");
-        primaryStages.setScene(new Scene(root));
-        primaryStages.show();
+        try {
+            this.primaryStage=primaryStage;
+            scene = new Scene(loadFXML("Menu"));
+            primaryStage.setScene(scene);
+            primaryStage.setTitle("Inicio De Sesion");
+            primaryStage.setResizable(false);
+            primaryStage.show();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void setFXML(String fxml, String title) {
+        try {
+            scene.setRoot(loadFXML(fxml));
+            primaryStage.sizeToScene();
+            primaryStage.centerOnScreen();
+            primaryStage.setTitle(title);
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+
     }
 
     private static Parent loadFXML(String fxml) throws IOException {
@@ -37,10 +52,12 @@ public class Main extends Application {
             Scene scene = new Scene(loadFXML(fxml));
             secondStage.setScene(scene);
             secondStage.setTitle(title);
+            secondStage.initOwner(primaryStage);
             secondStage.setResizable(false);
             secondStage.initModality(Modality.WINDOW_MODAL);
             secondStage.centerOnScreen();
             secondStage.show();
+
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
