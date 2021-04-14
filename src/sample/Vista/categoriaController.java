@@ -7,6 +7,8 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
+import sample.Main;
 
 public class categoriaController {
 
@@ -43,6 +45,8 @@ public class categoriaController {
     }
     @FXML
     void regresarClicked(MouseEvent event) {
-
+        Stage stage = (Stage) Main.secondStage.getScene().getWindow();
+        stage.close();
+        Main.newStage("Menu","Finanzas");
     }
 }

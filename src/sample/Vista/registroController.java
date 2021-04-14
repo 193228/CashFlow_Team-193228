@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.media.AudioClip;
+import javafx.stage.Stage;
 import sample.Crud.crudBancos;
 import sample.Crud.crudCuentas;
 import sample.Datos.entidadBancos;
@@ -136,7 +137,9 @@ public class registroController implements Initializable {
     }
     @FXML
     void regresarClicked(MouseEvent event) {
-
+        Stage stage = (Stage) Main.secondStage.getScene().getWindow();
+        stage.close();
+        Main.newStage("registroInfo","Menu");
     }
     @Override
     public void initialize(URL location, ResourceBundle resources) {
