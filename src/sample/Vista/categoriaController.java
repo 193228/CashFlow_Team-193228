@@ -76,6 +76,9 @@ public class categoriaController implements Initializable {
         clasificacionColumn.setCellValueFactory(new PropertyValueFactory<categoria,String>("clasificacion"));
         categoriaColumn.setCellValueFactory(new PropertyValueFactory<categoria,String>("nombre"));
         subcatColumn.setCellValueFactory(new PropertyValueFactory<categoria,String>("subcategorias"));
+        categoriaTextfield.clear();
+        subTextfield.clear();
+        calsificacionCombo.getSelectionModel().clearSelection();
     }
     @FXML
     void regresarClicked(MouseEvent event) {
