@@ -9,7 +9,7 @@ import sample.Adaptador.adaptadorSql;
 public class generarReporte {
 
 
-    void abrirReporte() {
+    public void abrirReporte() {
         adaptadorSql conector = new adaptadorSql();
         JasperPrint jasperPrintWindow;
         try {

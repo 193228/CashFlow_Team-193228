@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import sample.Main;
+import sample.Reportes.generarReporte;
 
 public class indicadorController {
 
@@ -24,7 +25,8 @@ public class indicadorController {
 
     @FXML
     void reporteClicked(MouseEvent event) {
-        
+        generarReporte generar = new generarReporte();
+        generar.abrirReporte();
     }
     @FXML
     void regresarClicked(MouseEvent event) {

@@ -6,7 +6,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.media.AudioClip;
 import javafx.stage.Stage;
+import sample.Datos.entidadCategorias;
 import sample.Main;
+import sample.Modelo.crudCategorias;
 import sample.Recursos.coneccionAudio;
 
 import java.net.URL;
@@ -42,7 +44,9 @@ public class menuController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
+        //entidadCategorias entidad = new entidadCategorias("1","GAO","122");
+        //crudCategorias id = new crudCategorias();
+        //id.obtenerId(entidad);
     }
 }
 

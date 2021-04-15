@@ -1,31 +1,34 @@
-package sample.Crud;
+package sample.Modelo;
+
 import sample.Adaptador.adaptadorSql;
-import sample.Datos.entidadBancos;
+import sample.Datos.entidadCuentas;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class crudBancos {
+public class crudCuentas {
 
     private Connection connection = null;
     private final int ACCEPT = 1;
 
-    public crudBancos() {
+    public crudCuentas() {
         adaptadorSql conector = new adaptadorSql();
         connection = conector.getConnection();
     }
 
 
 
-    public boolean insert(entidadBancos bancos) {
+    public boolean insert(entidadCuentas cuentas) {
         boolean resultado = false;
         if (connection != null) {
-            String sql = "insert into bancos (numeroSemana, monto, descripcion) values(?,?,?)";
+            String sql = "insert into cuentas (numeroSemana, razonSocial, Monto, tipoOperacion) values(?,?,?,?)";
             try {
                 PreparedStatement statement = connection.prepareStatement(sql);
-                statement.setInt(1,bancos.getNumeroSemana());
-                statement.setFloat(2,bancos.getMonto());
-                statement.setString(3,bancos.getDescripcion());
+               statement.setInt(1,cuentas.getNumeroSemana());
+               statement.setString(2,cuentas.getRazonSocial());
+               statement.setFloat(3,cuentas.getMonto());
+               statement.setString(4,cuentas.getTipoOperacion());
                 if (statement.executeUpdate() == ACCEPT)
                     resultado = true;
             } catch (SQLException e) {

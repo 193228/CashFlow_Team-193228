@@ -5,15 +5,12 @@ import com.jfoenix.controls.JFXTextField;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.media.AudioClip;
-import javafx.stage.Stage;
-import sample.Crud.crudBancos;
-import sample.Crud.crudCuentas;
+import sample.Modelo.crudBancos;
+import sample.Modelo.crudCuentas;
 import sample.Datos.entidadBancos;
 import sample.Datos.entidadCuentas;
 import sample.Main;
 import sample.Modelo.validacionNumerica;
-import sample.Recursos.coneccionAudio;
 
 import javax.swing.*;
 import java.net.URL;
@@ -139,6 +136,7 @@ public class registroController implements Initializable {
     void regresarClicked(MouseEvent event) {
         Main.setFXML("Menu","Finanzas");
     }
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
